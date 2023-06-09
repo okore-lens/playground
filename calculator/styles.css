@@ -1,0 +1,82 @@
+body {
+	position: relative;
+}
+
+#calculator {
+	background-color: rgb(255, 166, 0);
+	width: 500px;
+	margin: auto;
+	border-radius: 1rem;
+	padding: 2rem;
+	text-align: center;
+	margin-top: 3rem;
+}
+
+#calculator-body {
+	display: grid;
+	grid-template-columns: 3fr 2fr;
+	gap: 1rem;
+}
+
+#calculator-numbers {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 0.5rem;
+}
+
+#calculator-numbers > div {
+	border: 1px solid maroon;
+	border-radius: 0.3rem;
+	cursor: pointer;
+}
+
+#calculator-operators {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 0.5rem;
+	box-shadow: 0 0 3px 4px saddlebrown;
+	padding: 0.3rem;
+	border-radius: 0.2rem;
+}
+
+#calculator-operators > button {
+	background-color: #dd68fa;
+	cursor: pointer;
+	color: white;
+	border: 0;
+	padding: 0.5rem;
+	border-radius: 0.4rem;
+}
+
+#btn {
+	background-color: yellow !important;
+	color: black !important;
+}
+
+#btn:hover {
+	cursor: pointer;
+	background-color: black !important;
+	color: white !important;
+}
+
+.output {
+	width: 500px;
+	margin: 3rem auto;
+	box-shadow: 0 0 5px 8px rgb(216, 210, 210);
+	padding: 1rem;
+}
+
+.deliverables {
+	position: absolute;
+	background-color: grey;
+	padding: 0.4rem;
+	border-radius: 1rem;
+	top: 0;
+	width: 300px;
+	color: white;
+}
+
+ol > li {
+	padding: 0.2rem 0;
+	border-bottom: 1px solid #ff9595;
+}
