@@ -2,57 +2,44 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<title>Calculator</title>
-		<script src="app.js" defer></script>
+		<link
+			rel="icon"
+			type="image/x-icon"
+			href="https://images.unsplash.com/photo-1638003212091-5930c12d8fe0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGNhbGN1bGF0b3IlMjBibGFjayUyMHRoZW1lZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="styles.css" />
+
+		<script src="app.js" defer></script>
 	</head>
 	<body>
+		<header>
+			<h1>Calculator</h1>
+		</header>
+
 		<section id="calculator">
-			<h1>Simple Calculator</h1>
-			<section id="calculator-body">
-				<section id="calculator-numbers">
-					<div>1</div>
-					<div>2</div>
-					<div>3</div>
-					<div>4</div>
-					<div>5</div>
-					<div>6</div>
-					<div>7</div>
-					<div>8</div>
-					<div>9</div>
-					<div>0</div>
-					<div>.</div>
-				</section>
-				<section id="calculator-operators">
-					<button>+</button>
-					<button>-</button>
-					<button>*</button>
-					<button>/</button>
-					<button>%</button>
-					<button id="btn">Compute</button>
-				</section>
-			</section>
+			<input type="number" id="input-number" />
+			<div id="calc-actions">
+				<button type="button" id="btn-add">+</button>
+				<button type="button" id="btn-subtract">-</button>
+				<button type="button" id="btn-multiply">*</button>
+				<button type="button" id="btn-divide">/</button>
+			</div>
 		</section>
-		<section class="output">
-			<h2>Our Output Goes Here</h2>
-			<p>Example</p>
-			<p>2 + 3 = 7</p>
+		<section id="results">
+			<h2 id="current-calculation">0</h2>
+			<h2>Result: <span id="current-result">0</span></h2>
 		</section>
-
-		<section class="deliverables">
-			<h1>Objectives</h1>
-			<ol>
-				<li>Link JS and HTML files</li>
-				<li>Capture user clicks</li>
-
-				<li
-					>Perform different mathematical operations based on user
-					instructions</li
-				>
-				<li>Make sure to perform all the available mathematical operations</li>
-				<li>Output the result</li>
+		<section id="results">
+			<h2 id="calculation-log">Calculation Log</h2>
+			<ol id="log">
+				<li>0</li>
 			</ol>
 		</section>
 	</body>

@@ -1,82 +1,92 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-family: "Roboto", open-sans;
+}
+
 body {
-	position: relative;
+	margin: 0;
+	background-color: #000000;
+}
+
+header {
+	color: white;
+	padding: 1rem;
+	text-align: center;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+	width: 100%;
+}
+
+#results,
+#calculator {
+	margin: 2rem auto;
+	width: 40rem;
+	max-width: 90%;
+	border: 1px solid #023d6d;
+	border-radius: 10px;
+	padding: 1rem;
+	color: #023d6d;
+	background-color: #dd9f1a;
 }
 
 #calculator {
-	background-color: rgb(255, 166, 0);
-	width: 500px;
-	margin: auto;
-	border-radius: 1rem;
-	padding: 2rem;
+	display: flex;
+}
+
+#results {
 	text-align: center;
-	margin-top: 3rem;
+	color: #ffffff;
 }
 
-#calculator-body {
-	display: grid;
-	grid-template-columns: 3fr 2fr;
-	gap: 1rem;
+#calculator input {
+	font: inherit;
+	font-size: 3rem;
+	width: 19rem;
+	padding: 0.15rem;
+	margin: auto;
+	display: block;
+	color: #023d6d;
+	text-align: center;
 }
 
-#calculator-numbers {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	gap: 0.5rem;
+#calculator input:focus {
+	outline: none;
 }
 
-#calculator-numbers > div {
-	border: 1px solid maroon;
-	border-radius: 0.3rem;
+#calculator button {
+	font: inherit;
+	background: #5c118f;
+	color: white;
+	border: none;
+	padding: 1rem;
 	cursor: pointer;
+	border-radius: 1rem;
 }
 
-#calculator-operators {
+li {
+	text-align: start;
+}
+
+#calculator button:focus {
+	outline: none;
+}
+
+#calculator button:hover,
+#calculator button:active {
+	background: #084f88;
+	border-color: #084f88;
+}
+
+#calc-actions button {
+	width: 4rem;
+}
+
+#calc-actions {
+	margin-top: 1rem;
+	text-align: center;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	gap: 0.5rem;
-	box-shadow: 0 0 3px 4px saddlebrown;
-	padding: 0.3rem;
-	border-radius: 0.2rem;
-}
-
-#calculator-operators > button {
-	background-color: #dd68fa;
-	cursor: pointer;
-	color: white;
-	border: 0;
-	padding: 0.5rem;
-	border-radius: 0.4rem;
-}
-
-#btn {
-	background-color: yellow !important;
-	color: black !important;
-}
-
-#btn:hover {
-	cursor: pointer;
-	background-color: black !important;
-	color: white !important;
-}
-
-.output {
-	width: 500px;
-	margin: 3rem auto;
-	box-shadow: 0 0 5px 8px rgb(216, 210, 210);
-	padding: 1rem;
-}
-
-.deliverables {
-	position: absolute;
-	background-color: grey;
-	padding: 0.4rem;
-	border-radius: 1rem;
-	top: 0;
-	width: 300px;
-	color: white;
-}
-
-ol > li {
-	padding: 0.2rem 0;
-	border-bottom: 1px solid #ff9595;
+	gap: 1rem;
 }
